@@ -1,0 +1,32 @@
+GRADER file for Homework 8
+
+ Your Name:  Jason Ibrahim
+Your Login:  HJ
+
+Part III.  Running time comparisons
+
+  List size         mergesort             quicksort
+       10           0ms 		  0ms
+      100 	    2ms	        	  1ms
+    1,000	    14ms		  7ms
+   10,000	    39ms	  	  21ms
+  100,000	    262ms		  197ms
+
+Part IV.
+
+  Is mergesort stable?  
+  Why or why not?
+  
+  merge sort is stable because the order in which I compare two
+  items is the exact same order in which i enqueue and/or dequeue
+  the items. So if two items are the same, I check the first item
+  then I check the second item, then I insert the first item followed
+  by the second item. So the order is always preserved.
+
+  Is quicksort stable?  
+  Why or why not?
+
+  Quicksort is also stable for the same reason as above. In the equals
+  partition I insert items that are equal in order of precedence, that way
+  when the equals partition is appended in the end, the order is preserved
+  and Quicksort is stable.
