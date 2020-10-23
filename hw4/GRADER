@@ -1,0 +1,7 @@
+Jason Ibrahim
+CS 61B
+20162930
+
+1. Our ADT is not as well protected as we would like. There are several ways by which a hostile (or stupid) application can corrupt our DList (i.e., make it violate an invariant) through method calls alone. Describe one.
+
+One way an application can corrupt our DList is by calling a the next() method and passing in a null node, and assigning this return value to any x.next node. This would violate the invariant that for any x, x.next != null.}
